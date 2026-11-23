@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS customers (customer_id VARCHAR(20) PRIMARY KEY, first_name VARCHAR(50), surname VARCHAR(50), address VARCHAR(100));
+CREATE TABLE IF NOT EXISTS accounts (account_number VARCHAR(20) PRIMARY KEY, customer_id VARCHAR(20), balance DOUBLE, branch VARCHAR(50), type VARCHAR(20));
+CREATE TABLE IF NOT EXISTS transactions (transaction_id VARCHAR(20) PRIMARY KEY, type VARCHAR(20), amount DOUBLE, account_number VARCHAR(20), date_time VARCHAR(50));
+INSERT INTO customers VALUES ('C001','Neo','Kago','Gaborone'),('C002','Tumi','Molefe','Francistown'),('C003','Kabelo','Dube','Maun'),('C004','Lesego','Mokgosi','Kasane'),('C005','Thabo','Seretse','Palapye'),('C006','Amantle','Kgosi','Molepolole'),('C007','Kefilwe','Nkosi','Serowe'),('C008','Oarabile','Tau','Kanye'),('C009','Mpho','Gaborone','Lobatse'),('C010','Dineo','Rathebe','Ramotswa');
